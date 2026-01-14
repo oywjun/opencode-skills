@@ -1,0 +1,38 @@
+# Dependencies
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+**/venv/
+**/.venv/
+
+# Build artifacts
+**/lib/
+**/dist/
+**/build/
+**/obj/
+**/*.o
+**/*.a
+**/*.so
+
+# Lock files (keep package-lock.json)
+**/yarn.lock
+**/pnpm-lock.yaml
+**/bun.lock
+**/uv.lock
+
+# IDE
+**/.vscode/
+**/.idea/
+**/*.swp
+**/*.swo
+
+# OS
+**/.DS_Store
+**/Thumbs.db
+**/*.tmp
+
+# Temporary
+**/.cache/
+**/.temp/
+**/tmp/
