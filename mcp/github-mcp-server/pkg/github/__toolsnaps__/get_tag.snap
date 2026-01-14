@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "readOnlyHint": true,
+    "title": "Get tag details"
+  },
+  "description": "Get details about a specific git tag in a GitHub repository",
+  "inputSchema": {
+    "type": "object",
+    "required": [
+      "owner",
+      "repo",
+      "tag"
+    ],
+    "properties": {
+      "owner": {
+        "type": "string",
+        "description": "Repository owner"
+      },
+      "repo": {
+        "type": "string",
+        "description": "Repository name"
+      },
+      "tag": {
+        "type": "string",
+        "description": "Tag name"
+      }
+    }
+  },
+  "name": "get_tag"
+}

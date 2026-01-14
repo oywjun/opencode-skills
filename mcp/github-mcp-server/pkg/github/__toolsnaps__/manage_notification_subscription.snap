@@ -1,0 +1,29 @@
+{
+  "annotations": {
+    "title": "Manage notification subscription"
+  },
+  "description": "Manage a notification subscription: ignore, watch, or delete a notification thread subscription.",
+  "inputSchema": {
+    "type": "object",
+    "required": [
+      "notificationID",
+      "action"
+    ],
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action to perform: ignore, watch, or delete the notification subscription.",
+        "enum": [
+          "ignore",
+          "watch",
+          "delete"
+        ]
+      },
+      "notificationID": {
+        "type": "string",
+        "description": "The ID of the notification thread."
+      }
+    }
+  },
+  "name": "manage_notification_subscription"
+}

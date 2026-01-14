@@ -1,0 +1,62 @@
+{
+  "mcp": {
+    "android": {
+      "command": "python3",
+      "args": [
+        "/home/eli/.config/opencode/mcp/android-mcp-server/server.py"
+      ],
+      "disabled": false
+    },
+    "mobile": {
+      "command": "node",
+      "args": [
+        "/home/eli/.config/opencode/mcp/mobile-mcp/lib/index.js"
+      ],
+      "disabled": false
+    },
+    "kotlin": {
+      "command": "python3",
+      "args": [
+        "/home/eli/.config/opencode/mcp/kotlin-mcp-server/kotlin_mcp_server.py"
+      ],
+      "disabled": false
+    },
+    "filesystem": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-filesystem",
+        "/home/eli"
+      ],
+      "disabled": false
+    },
+    "git": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-git",
+        "--repository",
+        "/home/eli"
+      ],
+      "disabled": false
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-fetch"
+      ],
+      "disabled": false
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@executeautomation/mcp-playwright"
+      ],
+      "disabled": false
+    }
+  },
+  "permission": {
+    "skill": {
+      "*": "allow"
+    }
+  }
+}
