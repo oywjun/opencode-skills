@@ -6,8 +6,8 @@
 set -e
 
 # Configuration
-REPO_URL="https://github.com/oywjun/opencode-skills-mcp.git"
-REPO_DIR="$HOME/opencode-skills-mcp"
+REPO_URL="https://github.com/oywjun/opencode-skills.git"
+REPO_DIR="$HOME/opencode-skills"
 OPENC_DIR="$HOME/.config/opencode"
 SKILLS_DIR="$HOME/.claude"
 CONFIG_FILE="$HOME/.config/opencode/opencode.json"
@@ -131,7 +131,7 @@ import json
 
 try:
     config_path = "/home/eli/.config/opencode/opencode.json"
-    output_path = "/home/eli/opencode-skills-mcp/opencode-config.json"
+    output_path = "/home/eli/opencode-skills/opencode-config.json"
     
     with open(config_path, "r") as f:
         config = json.load(f)
@@ -196,7 +196,7 @@ import json
 
 try:
     config_path = "/home/eli/.config/opencode/opencode.json"
-    restore_path = "/home/eli/opencode-skills-mcp/opencode-config.json"
+    restore_path = "/home/eli/opencode-skills/opencode-config.json"
     
     with open(config_path, "r") as f:
         config = json.load(f)
