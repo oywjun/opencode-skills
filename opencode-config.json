@@ -1,59 +1,69 @@
 {
   "mcp": {
     "android": {
-      "command": "python3",
-      "args": [
+      "type": "local",
+      "command": [
+        "python3",
         "/home/eli/.config/opencode/mcp/android-mcp-server/server.py"
       ],
-      "disabled": false
+      "enabled": true
     },
     "mobile": {
-      "command": "node",
-      "args": [
+      "type": "local",
+      "command": [
+        "node",
         "/home/eli/.config/opencode/mcp/mobile-mcp/lib/index.js"
       ],
-      "disabled": false
+      "enabled": true
     },
     "kotlin": {
-      "command": "python3",
-      "args": [
+      "type": "local",
+      "command": [
+        "python3",
         "/home/eli/.config/opencode/mcp/kotlin-mcp-server/kotlin_mcp_server.py"
       ],
-      "disabled": false
+      "enabled": true
     },
     "filesystem": {
-      "command": "uvx",
-      "args": [
+      "type": "local",
+      "command": [
+        "uvx",
         "mcp-server-filesystem",
         "/home/eli"
       ],
-      "disabled": false
+      "enabled": true
     },
     "git": {
-      "command": "uvx",
-      "args": [
+      "type": "local",
+      "command": [
+        "uvx",
         "mcp-server-git",
         "--repository",
         "/home/eli"
       ],
-      "disabled": false
+      "enabled": true
     },
     "fetch": {
-      "command": "uvx",
-      "args": [
+      "type": "local",
+      "command": [
+        "uvx",
         "mcp-server-fetch"
       ],
-      "disabled": false
+      "enabled": true
     },
     "playwright": {
-      "command": "npx",
-      "args": [
+      "type": "local",
+      "command": [
+        "npx",
         "-y",
         "@executeautomation/mcp-playwright"
       ],
-      "disabled": false
+      "enabled": true
     }
   },
+  "plugin": [
+    "oh-my-opencode"
+  ],
   "permission": {
     "skill": {
       "*": "allow"
